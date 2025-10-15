@@ -4,13 +4,35 @@
     box-sizing: border-box;
 }
 
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #ffefe6;
+  --primary-color: #ff960b;
+  --secondary-color: #ffffff;
+  --accent-color: #ffe7c2;
+  --border-color: #ddd;
+  --hover-color: #ffb347;
+}
+
+.light-theme{
+  --background-color: #0d0d0d;
+  --text-color: #e0e0e0;
+  --primary-color: #ff960b;
+  --secondary-color: #1a1a1a;
+  --accent-color: #2b2b2b;
+  --border-color: #444;
+  --hover-color: #ffa94d;
+}
+
+
+
 .container{
     width: 100%;
     height: 100vh;
     padding: 0 7%;
     background-position: center;
     background-size: cover;
-    color: #777;
+    color: var(--text-color);
     background-image: url('images/images/background.png');
 }
 nav{
@@ -34,17 +56,17 @@ nav ul li{
 nav a{
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;            
+    color: var(--text-color);
     font-weight: bold;
 }
 nav a:hover{
-    color: #ff960b;
+    color: var(--hover-color);
 }
 nav .btn{
     padding: 10px 30px;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
@@ -56,7 +78,7 @@ nav .btn{
 
 .content h1{
     font-size: 88px;
-    color: #fff;
+    color: var(--accent-color);
     margin-bottom: 15px;
 }
 .content p{
@@ -64,13 +86,13 @@ nav .btn{
     line-height: 22px;
 }
 .content h1 span{
-    color: #ff960b;
+    color: var(--primary-color);
 }
 .content .btn{
     display: inline-block;
     margin-top: 30px;
-    background: #ff960b;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 30px;
@@ -89,8 +111,8 @@ nav .btn{
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #ff960b;
-    border: 1px solid #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
     padding: 20px 30px;
     border-radius: 8px;
 }
@@ -101,7 +123,13 @@ nav .btn{
 }
 
 .coin h3{
-    color: #fff;
+    color: var(--secondary-color);
     margin-bottom: 5px;
+}
+
+nav .fa-sun{
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
 }
 
