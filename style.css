@@ -38,7 +38,7 @@ nav a{
     font-weight: bold;
 }
 nav a:hover{
-    color: orange;
+    color: #ff960b;
 }
 nav .btn{
     padding: 10px 30px;
@@ -49,3 +49,30 @@ nav .btn{
     cursor: pointer;
     font-weight: bold;
 }
+
+.content{
+    margin-top: 12%;
+}
+
+.content h1{
+    font-size: 88px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.content p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.content h1 span{
+    color: #ff960b;
+}
+.content .btn{
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff960b;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
